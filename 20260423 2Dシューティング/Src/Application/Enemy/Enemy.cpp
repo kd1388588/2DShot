@@ -2,7 +2,7 @@
 
 void Enemy::Init()
 {
-	m_pos = { 0,-250 };
+	m_pos = { 0,250 };
 	m_move = { 0,0 };
 	m_rect = { 0,0,64,64 };
 	m_radiusX = 32.0f;

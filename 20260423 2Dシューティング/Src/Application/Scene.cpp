@@ -2,11 +2,12 @@
 #include "Scene.h"
 #include "Player.h"
 #include"Enemy/Enemy.h"
+#include"Bullet/Bullet.h"
 
 void Scene::Draw2D()
 {
 	m_player->Draw();
-	m_Enemy->Draw();
+	m_enemy->Draw();
 }
 
 void Scene::Update()
@@ -14,7 +15,7 @@ void Scene::Update()
 	m_player->Action();
 	m_player->Update();
 
-	m_Enemy->Update();
+	m_enemy->Update();
 }
 
 void Scene::Init()
@@ -23,9 +24,9 @@ void Scene::Init()
 	m_playerTex.Load("Texture/Player/Player.png");
 	m_player->SetTex(&m_playerTex);	
 
-	m_Enemy->Init();
-	m_EnemyTex.Load("Texture/Player/Player.png");
-	m_Enemy->SetTex(&m_EnemyTex);	
+	m_enemy->Init();
+	m_enemyTex.Load("Texture/Player/Player.png");
+	m_enemy->SetTex(&m_enemyTex);	
 }
 
 void Scene::Release()
@@ -51,4 +52,6 @@ void Scene::ImGuiUpdate()
 Scene::Scene()
 {
 	m_player = new Player();
+	m_enemy = new Enemy();
+	m_bullet = new Bullet();
 }

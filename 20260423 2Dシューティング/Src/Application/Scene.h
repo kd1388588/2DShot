@@ -2,17 +2,19 @@
 
 class Player;
 class Enemy;
+class Bullet;
 
 class Scene
 {
 private:
 
 	Player* m_player = nullptr;
-	Enemy* m_Enemy = nullptr;
+	Enemy* m_enemy = nullptr;
+	Bullet* m_bullet = nullptr;
 
 	// テクスチャ ・・・ 画像データ
 	KdTexture m_playerTex;
-	KdTexture m_EnemyTex;
+	KdTexture m_enemyTex;
 
 	// 行列 ・・・ 座標などの情報
 	Math::Matrix matrix;
