@@ -12,10 +12,7 @@ void Scene::Draw2D()
 
 void Scene::Update()
 {
-	m_player->Action();
-	m_player->Update();
 
-	m_enemy->Update();
 }
 
 void Scene::Init()

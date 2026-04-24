@@ -49,9 +49,6 @@
     <Filter Include="Src\Application\Enemy">
       <UniqueIdentifier>{3adbf5c6-037c-4d12-b4d3-50fa421078c1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Src\Application\Manager\NewFilter1">
-      <UniqueIdentifier>{f79c4681-5e33-4be5-98fe-ca475576ae66}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Src\Application\Scene">
       <UniqueIdentifier>{3d7bb72f-54e9-4aa5-8a80-6416370d7bbf}</UniqueIdentifier>
     </Filter>
@@ -60,6 +57,15 @@
     </Filter>
     <Filter Include="Src\Application\Bullet">
       <UniqueIdentifier>{337e24b2-42c6-4520-823a-c6cdf33cb24d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\Scene\TitleScene">
+      <UniqueIdentifier>{30ca7159-ee6f-4f9b-9d36-a53eac818c45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\Scene\GameScene">
+      <UniqueIdentifier>{04e14483-4c2e-4a3b-90ca-aee31dbe5f57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Application\Scene\ResultScene">
+      <UniqueIdentifier>{57fcebb1-4ea9-484b-88a4-30458d00e26a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -171,6 +177,21 @@
     <ClInclude Include="Src\Application\Bullet\Bullet.h">
       <Filter>Src\Application\Bullet</Filter>
     </ClInclude>
+    <ClInclude Include="Src\Application\Scene\BaseScene.h">
+      <Filter>Src\Application\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\Scene\GameScene\GameScene.h">
+      <Filter>Src\Application\Scene\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\Scene\ResultScene\ResultScene.h">
+      <Filter>Src\Application\Scene\ResultScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\Scene\TitleScene\TitleScene.h">
+      <Filter>Src\Application\Scene\TitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\Application\Scene\GameScene.h" />
+    <ClInclude Include="Src\Application\Scene\ResultScene.h" />
+    <ClInclude Include="Src\Application\Scene\TitleScene.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Pch.cpp">
@@ -251,6 +272,22 @@
     <ClCompile Include="Src\Application\Bullet\Bullet.cpp">
       <Filter>Src\Application\Bullet</Filter>
     </ClCompile>
+    <ClCompile Include="Src\Application\Scene\BaseScene.cpp">
+      <Filter>Src\Application\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Scene\GameScene\GameScene.cpp">
+      <Filter>Src\Application\Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Scene\ResultScene\ResultScene.cpp">
+      <Filter>Src\Application\Scene\ResultScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Scene\TitleScene\TiteleScene.cpp" />
+    <ClCompile Include="Src\Application\Scene\TitleScene\TitleScene.cpp">
+      <Filter>Src\Application\Scene\TitleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Src\Application\Scene\GameScene.cpp" />
+    <ClCompile Include="Src\Application\Scene\ResultScene.cpp" />
+    <ClCompile Include="Src\Application\Scene\TitleScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="説明.txt" />
