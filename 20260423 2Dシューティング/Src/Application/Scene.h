@@ -1,15 +1,18 @@
 #pragma once
 
 class Player;
+class Enemy;
 
 class Scene
 {
 private:
 
 	Player* m_player = nullptr;
+	Enemy* m_Enemy = nullptr;
 
 	// テクスチャ ・・・ 画像データ
 	KdTexture m_playerTex;
+	KdTexture m_EnemyTex;
 
 	// 行列 ・・・ 座標などの情報
 	Math::Matrix matrix;

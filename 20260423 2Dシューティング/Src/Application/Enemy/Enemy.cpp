@@ -1,8 +1,8 @@
-#include "Player.h"
+#include "Enemy.h"
 
-void Player::Init()
+void Enemy::Init()
 {
-	m_pos = { 0,-200 };
+	m_pos = { 0,-250 };
 	m_move = { 0,0 };
 	m_rect = { 0,0,64,64 };
 	m_radiusX = 32.0f;
@@ -15,7 +15,7 @@ void Player::Init()
 	m_isActive = true;
 }
 
-void Player::Update()
+void Enemy::Update()
 {
 	if (m_pos.x > 640 - 32)		m_pos.x = 640 - 32;
 	if (m_pos.x < -640 + 32)	m_pos.x = -640 + 32;
@@ -28,20 +28,8 @@ void Player::Update()
 	m_mat = m_scaleMat * m_transMat;
 }
 
-void Player::Draw()
+void Enemy::Draw()
 {
 	SHADER.m_spriteShader.SetMatrix(m_mat);
-	SHADER.m_spriteShader.DrawTex(m_tex, m_rect,m_alpha);
-}
-
-void Player::Action()
-{
-	m_pos = m_move;
-
-	if (GetAsyncKeyState('A') & 0x8000) m_move.x -= 10;
-	if (GetAsyncKeyState('D') & 0x8000) m_move.x += 10;
-	if (GetAsyncKeyState('W') & 0x8000) m_move.y += 10;
-	if (GetAsyncKeyState('S') & 0x8000) m_move.y -= 10;
-
-	if (GetAsyncKeyState(VK_SPACE) & 0x8000) m_isShot = true;
+	SHADER.m_spriteShader.DrawTex(m_tex, m_rect, m_alpha);
 }
