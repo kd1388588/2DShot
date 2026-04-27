@@ -9,7 +9,9 @@ class Bullet;
 
 class GameScene : public BaseScene
 {
+	
 public:
+
 	GameScene() { Init(); }
 	~GameScene() {}
 
